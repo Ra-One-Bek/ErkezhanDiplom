@@ -1,0 +1,45 @@
+name: frontend
+description: "Flutter application for plant species and disease classification."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management for MVVM
+  provider: ^6.1.2
+
+  # Navigation between application screens
+  go_router: ^14.2.7
+
+  image_picker: ^1.1.2
+
+  tflite_flutter: ^0.11.0
+
+  image: ^4.2.0
+  firebase_core: ^4.9.0
+  firebase_auth: ^6.5.1
+  cloud_firestore: ^6.4.1
+  google_generative_ai: ^0.4.7
+  flutter_dotenv: ^6.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/plant_disease_model.tflite
+    - assets/labels/labels.txt
+    - .env

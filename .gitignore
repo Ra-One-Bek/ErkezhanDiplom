@@ -1,0 +1,33 @@
+# Python
+**/venv/
+**/.venv/
+__pycache__/
+*.pyc
+
+# Dataset
+**/dataset/
+**/dataset_raw/
+
+# Flutter
+**/.dart_tool/
+**/build/
+
+# Android Studio
+.idea/
+*.iml
+
+# Firebase / env
+.env
+
+# ML files
+*.h5
+*.keras
+*.pt
+*.pth
+*.ckpt
+
+# TFLite
+!frontend/assets/models/*.tflite
+
+ml/models/
+!frontend/assets/models/*.tflite
